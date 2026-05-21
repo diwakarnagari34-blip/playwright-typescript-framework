@@ -1,0 +1,26 @@
+{
+  "name": "playwright-typescript-framework",
+  "version": "1.0.0",
+  "description": "Production-grade Playwright + TypeScript test automation framework with POM pattern",
+  "scripts": {
+    "test": "npx playwright test",
+    "test:headed": "npx playwright test --headed",
+    "test:chrome": "npx playwright test --project=chromium",
+    "test:firefox": "npx playwright test --project=firefox",
+    "test:debug": "npx playwright test --debug",
+    "report": "npx playwright show-report",
+    "lint": "eslint src/ --ext .ts",
+    "lint:fix": "eslint src/ --ext .ts --fix",
+    "format": "prettier --write src/"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.45.0",
+    "@typescript-eslint/eslint-plugin": "^7.0.0",
+    "@typescript-eslint/parser": "^7.0.0",
+    "eslint": "^8.57.0",
+    "prettier": "^3.3.0",
+    "typescript": "^5.5.0"
+  },
+  "author": "Diwakar",
+  "license": "MIT"
+}
